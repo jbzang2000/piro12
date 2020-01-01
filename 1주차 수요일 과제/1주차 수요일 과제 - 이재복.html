@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter, 피로그래밍 과제 - 이재복</title>
+
+
+    <style>
+
+        a {
+            text-decoration: none;
+        }
+
+        #content_big_main {
+            overflow: hidden;
+        }
+
+
+        #content_big_left {
+            width: 600px;
+            height: 400px;
+            background-color: #1da1f2;
+            float: left;
+            position: relative;
+            align-items: center;
+        }
+        #content_left_wrap {
+            padding: 0 16px;
+            color: #ffffff;
+            position: relative;
+            max-width: 440px;
+            display: block;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        #content_left_wrap img {
+            width: 24px;
+            height: 24px;
+            margin-left: 16px;
+        }
+
+
+        #content_left_first {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            margin: 48px 0;
+
+        }
+        #content_left_second {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            margin: 48px 0;
+        }
+        #content_left_third {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            margin: 48px 0;
+        }
+
+        #content_big_right {
+            align-items: center;
+            width: 600px;
+            display: block;
+            justify-content: center;
+            position: relative;
+            float: left;
+        }
+
+        #content_right_wrap {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        #content_right_login {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin: 16px auto;
+        }
+
+        #right_login_bird img {
+            width: 42px;
+            height: 42px;
+        }
+
+        #small_login_button {
+            border-radius: 100px;
+            box-shadow: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+            padding: 6px 16px;
+            text-align: center;
+            white-space: nowrap;
+            border: 1px solid #1da1f2;
+            text-decoration: none;
+        }
+
+        #small_login_button a {
+            color: #1da1f2;
+        }
+
+        #content_right_sign h2 {
+            color: #14171a;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 48px auto 16px auto ;
+
+        }
+
+        #button_right_sign {
+            border-radius: 100px;
+            box-shadow: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+            padding: 6px 16px;
+            text-align: center;
+            white-space: nowrap;
+            border: 1px solid #1da1f2;
+            text-decoration: none;
+            margin-bottom: 16px;
+            background-color: #1da1f2;
+        }
+
+        #button_right_sign a {
+            color: #ffffff;
+        }
+
+        #button_right_login {
+            border-radius: 100px;
+            box-shadow: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+            padding: 6px 16px;
+            text-align: center;
+            white-space: nowrap;
+            border: 1px solid #1da1f2;
+            text-decoration: none;
+            margin-bottom: 16px;
+            background-color: #fff;
+        }
+
+        #button_right_login a {
+            color: #1da1f2;
+        }
+
+        #footer {
+            position: static;
+            border-top: 1px solid gray;
+            color: #aab8c2;
+            font-size: 12px;
+            width: 1200px;
+            padding: 11px 0;
+        }
+
+        #footer a {
+            color: #aab8c2;
+
+        }
+
+        #footer_content ul li{
+            display: inline;
+            list-style: none;
+            float: left;
+            padding: 9px;
+        }
+
+
+
+        #content_right_happen {
+
+        }
+    </style>
+</head>
+<body>
+    <div id="content_big_main">
+        <div id="content_big_left">
+            <div id="content_left_wrap">
+                <div id="content_left_first">
+                    <img src="https://image.flaticon.com/icons/svg/49/49116.svg">
+                    <span id="left_first">관심사를 팔로우하세요.</span>
+                </div>
+                <div id="content_left_second">
+                    <img src="https://image.flaticon.com/icons/svg/32/32797.svg">
+                    <span id="left_second">사람들이 이야기하고 있는 주제에 대해 알아보세요.</span>
+                </div>
+                <div id="content_left_third">
+                    <img src="https://image.flaticon.com/icons/svg/2/2043.svg">
+                    <span id="left_third">대화에 참여하세요</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="content_big_right">
+            <div id="login">
+                <div id="login_id"></div>
+                <div id="login_pw"></div>
+            </div>
+            <div id="content_right_wrap">
+                <div id="content_right_login">
+                    <span id="right_login_bird"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png"></span>
+                    <a id="small_login_button" href="http://google.com">로그인</a>
+                </div>
+                <h1 id="content_right_check">지금 세계 곳곳에서 무슨 일이 일어나고 있는지 확인하세요.</h1>
+                <div id="content_right_sign">
+                    <h2>지금 트위터에 가입하세요</h2>
+                    <div id="button_right_sign">
+                        <a href="https://twitter.com/signup">가입하기</a>
+                    </div>
+                    <div id="button_right_login">
+                        <a href="https://twitter.com/login">로그인</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+
+
+
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_content">
+            <ul>
+                <li class="StreamsFooter-item"><a href="/about" rel="noopener">회사소개</a></li>
+                <li class="StreamsFooter-item"><a href="//support.twitter.com" rel="noopener">고객센터</a></li>
+                <li class="StreamsFooter-item"><a href="https://blog.twitter.com/korea" rel="noopener">블로그</a></li>
+                <li class="StreamsFooter-item"><a href="http://status.twitter.com" rel="noopener">시스템 현황</a></li>
+                <li class="StreamsFooter-item"><a href="https://about.twitter.com/careers" rel="noopener">인재채용</a></li>
+                <li class="StreamsFooter-item"><a href="/tos" rel="noopener">이용약관</a></li>
+                <li class="StreamsFooter-item"><a href="/privacy" rel="noopener">개인정보 처리방침</a></li>
+                <li class="StreamsFooter-item"><a href="//support.twitter.com/articles/20170514" rel="noopener">쿠키</a></li>
+                <li class="StreamsFooter-item"><a href="//business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html" rel="noopener">광고 정보</a></li>
+                <li class="StreamsFooter-item"><a href="//about.twitter.com/press/brand-assets" rel="noopener">브랜드</a></li>
+                <li class="StreamsFooter-item"><a href="https://about.twitter.com/products" rel="noopener">애플리케이션</a></li>
+                <li class="StreamsFooter-item"><a href="//ads.twitter.com/?ref=gl-tw-tw-twitter-advertise" rel="noopener">광고</a></li>
+                <li class="StreamsFooter-item"><a href="https://marketing.twitter.com" rel="noopener">마케팅</a></li>
+                <li class="StreamsFooter-item"><a href="https://business.twitter.com" rel="noopener">비즈니스</a></li>
+                <li class="StreamsFooter-item"><a href="//dev.twitter.com" rel="noopener">개발자</a></li>
+                <li class="StreamsFooter-item"><a href="/i/directory/profiles" rel="noopener">디렉토리</a></li>
+                <li class="StreamsFooter-item"><a href="/settings/personalization" rel="noopener">설정</a></li>
+                <li class="StreamsFooter-item StreamsFooter-copyright">&copy; 2020 Twitter</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
