@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+      <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <title>Hello, world!</title>
+
+    <style>
+      .card-container {
+        max-width: 1100px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <i class="fas fa-apple-alt"></i>
+    Fruits!
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">홈으로<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">과일 설명</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">과일 구매</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          과일 목록
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">귤</a>
+          <a class="dropdown-item" href="#">오렌지</a>
+          <a class="dropdown-item" href="#">천리향</a>
+          <a class="dropdown-item" href="#">레드향</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">기타 귤</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">과일 판매</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="과일 쓰기!" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">어떤걸 먹지?</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="container col-lg-9 col-md-9 col-sm-12">
+      <div class="alert" role="alert">
+        <h4 class="alert-heading">어떤 과일을 좋아하세요?</h4>
+        <p>오! 이것저것 많이 쓰고 싶지만, 시간 관계상 여기를 다 채우는건 힘들 것 같아요. 나는 과일을 좋아해여. 근데 자취를 하다보면 음식물 쓰레기 때문에 과일을 먹을 수 없어서 슬퍼요.</p>
+        <hr>
+        <p class="mb-0 text-center">
+          그래서 준비했어. 과일을 먹고싶어서 만든 과일 사이트!
+          </br>제목 가운데 정렬은 안했어요. h4 클래스에  text-center 를 넣으면 되지만 이게 디자인이 이쁜 것 같아서 ㅎㅎ.
+          </br>전체 컨테이너를 하나 설정하고, 그 안에 row 넣고 그리드로 만든 뒤에 그 안에 왼쪽과 오른쪽을 구성해야 한다.
+          </br>그리고 그 안에 또 row 를 적용해야 하니 또 커다란 row 넣고 그 안에 col을 넣은 뒤 그 안에 카드를 넣는다.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">우유</h5>
+              <h6 class="card-subtitle mb-2 text-muted">우유란 무엇인가?</h6>
+              <p class="card-text">우유는 과일은 아니지만 지금 내가 먹고싶은데 다 떨어져서 써봄. 우유 사러 가야하는데 귀찮다</p>
+              <a href="#" class="card-link">우유?</a>
+              <button type="button" class="btn btn-outline-secondary">우유 구매</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">바나나</h5>
+              <h6 class="card-subtitle mb-2 text-muted">바나나란 무엇인가?</h6>
+              <p class="card-text">이 색은 바나나 색은 아니지만 그냥 썩은 바나나라고 해두자. 이런 색이 아니기도 하지만 이런 색 과일을 못떠올리겠어요</p>
+              <a href="#" class="card-link">바나나?</a>
+              <button type="button" class="btn btn-dark">바나나 구매</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">수박</h5>
+              <h6 class="card-subtitle mb-2 text-muted">수박이란 무엇인가?</h6>
+              <p class="card-text">아버튼 앞에꺼가 너무 링크랑 붙어서 뗌. 이걸 하려면 d-flex 를 해야 하니까 아래 두개를 div로 감싸고 d-flex 주면 됨.  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="card-link">수박?</a>
+                <button type="button" class="btn btn-success">수박 구매</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">사실 이 카드에는 마진이 다 붙어있음. 카드를 감싼 col-lg-4 col-md-12 이거에 mb-1을 넣어야 함!  </p>
+              <a href="#" class="card-link">Card link</a>
+              <button type="button" class="btn btn-danger">Danger</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">옆에 list group을 원래 navs로 했었는데 그렇게 하니까 저렇게 보더가 안생기더라. 리스트에 border 넣으니까 텍스트에만 생기더라</p>
+              <a href="#" class="card-link">Card link</a>
+              <button type="button" class="btn btn-warning">Warning</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-1">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">이 큰 전체를 12로 나눠서 이렇게 해야 한다. 이 구조를 잘 보자. </p>
+            <button type="button" class="btn btn-info">Info</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="nav col-lg-3 col-md-3 col-sm-12">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active">
+          Cras justo odio
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
